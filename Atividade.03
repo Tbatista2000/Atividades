@@ -1,0 +1,186 @@
+namespace WinFormsApp3
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+            int x = 0;
+            int y = 5;
+            int z = 0;
+
+            MessageBox.Show("Posição inicial: (" + x + ", " + y + ", " + z + ")");
+        }
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        private void Form1_Load1(object sender, EventArgs e)
+        {
+            int escalaX = 2;
+            int escalaY = 2;
+            int escalaZ = 2;
+
+            MessageBox.Show("Escala: " + escalaX + ", " + escalaY + ", " + escalaZ);
+        }
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        private void Form1_Load2(object sender, EventArgs e)
+        {
+            int altura = 3;
+
+            MessageBox.Show("Objeto movido " + altura + " unidades para cima.");
+        }
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        private void Form1_Load3(object sender, EventArgs e)
+        {
+            int x = 0;
+            int y = 0;
+            int z = 0;
+
+            MessageBox.Show("Posição resetada.");
+        }
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        private void Form1_Load4(object sender, EventArgs e)
+        {
+            int x1 = 0;
+            int y1 = 0;
+
+            int x2 = 5;
+            int y2 = 0;
+
+            double distancia;
+
+            distancia = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
+
+            MessageBox.Show("Distância: " + distancia);
+        }
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        private void Form1_Load5(object sender, EventArgs e)
+        {
+            int direcao = 1;
+
+            if (direcao > 0)
+            {
+                MessageBox.Show("Direita");
+            }
+            else if (direcao < 0)
+            {
+                MessageBox.Show("Esquerda");
+            }
+            else
+            {
+                MessageBox.Show("Parado");
+            }
+        }
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        private void Form1_Load6(object sender, EventArgs e)
+        {
+            double vertical = 0.8;
+
+            MessageBox.Show(vertical.ToString());
+        }
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        private void Form1_Load7(object sender, EventArgs e)
+        {
+            int altura = 1;
+
+            MessageBox.Show("Pulou " + altura + " unidade.");
+        }
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        private void Form1_Load8(object sender, EventArgs e)
+        {
+            bool podeSeMover = false;
+
+            if (!podeSeMover)
+            {
+                MessageBox.Show("Movimentação travada");
+            }
+        }
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        private void Form1_Load9(object sender, EventArgs e)
+        {
+            int velocidade = 1000;
+
+            MessageBox.Show("Velocidade: " + velocidade);
+        }
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        private void Form1_Load10(object sender, EventArgs e)
+        {
+            int horizontal = 1;
+            int vertical = 1;
+            int velocidade = 5;
+
+            MessageBox.Show("Movimento: " + velocidade);
+        }
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        private void Form1_Load11(object sender, EventArgs e)
+        {
+            double velocidade = 5;
+
+            velocidade = velocidade * 0.5;
+
+            MessageBox.Show("Velocidade: " + velocidade);
+        }
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        private void Form1_Load12(object sender, EventArgs e)
+        {
+            int dash = 5;
+
+            MessageBox.Show("Dash executado: " + dash);
+        }
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        private void Form1_Load13(object sender, EventArgs e)
+        {
+            int segundos = 10;
+
+            MessageBox.Show("Tempo: " + segundos + " segundos");
+        }
+
+        ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+        private void Form1_Load14(object sender, EventArgs e)
+        {
+            int velocidade = 3;
+
+            MessageBox.Show("Patrulha iniciada com velocidade " + velocidade);
+        }
+
+
+
+    }
+
+
+
+
+
+}
+
+
+    
+
